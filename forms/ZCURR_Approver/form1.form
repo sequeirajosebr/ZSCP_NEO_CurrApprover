@@ -1,0 +1,54 @@
+{
+    "id": "form1",
+    "schemaVersion": "1.0.0",
+    "name": "form1",
+    "revision": "1.0",
+    "type": "task",
+    "readOnly": true,
+    "content": [
+        {
+            "id": "details",
+            "type": "section",
+            "title": "Details",
+            "content": [
+                {
+                    "id": "from_currency",
+                    "type": "string",
+                    "label": "From Currency",
+                    "readOnly": false,
+                    "value": "${context.FROM}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "to_currency",
+                    "type": "string",
+                    "label": "To Currency",
+                    "readOnly": false,
+                    "value": "${context.CURRENCY}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "value",
+                    "type": "string",
+                    "label": "Value",
+                    "readOnly": false,
+                    "value": "${context.VALUE}",
+                    "constraints": {
+                        "required": false
+                    }
+                }
+            ]
+        }
+    ],
+    "decisions": [
+        {
+            "id": "Approve",
+            "text": "Approve",
+            "decisionType": "positive"
+        }
+    ]
+}
